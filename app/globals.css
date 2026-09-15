@@ -3,7 +3,7 @@
 :root { --terracotta: #c62828; --terracotta-dark: #8e1b1b; --slate: #263238; --amber: #ff8f00; --paper: #f7f8f9; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--paper); color: var(--slate); font-family: Arial, Helvetica, sans-serif; }
+body { margin: 0; background: var(--paper); color: var(--slate); font-family: var(--font-roboto), Roboto, Arial, Helvetica, sans-serif; }
 .container-wide { width: min(1280px, calc(100% - 32px)); margin-inline: auto; }
 .card-shadow { box-shadow: 0 8px 24px rgba(38,50,56,.08); }
 .grid-lines { background-image: linear-gradient(to right, rgba(38,50,56,.04) 1px, transparent 1px); background-size: 25% 100%; }
