@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+:root {
+  --color-primary: #183b56;
+  --color-primary-hover: #24577b;
+  --color-background: #f3f8fb;
+  --color-surface: #ffffff;
+  --color-border: #dbe8f0;
+  --color-text-primary: #17324a;
+  --color-text-secondary: #60798b;
+  --color-accent: #2f80b7;
+  --color-accent-hover: #236995;
+  --color-danger: #397ea6;
+  --color-success: #2d8a70;
+  --radius-card: 12px;
+  --shadow-card: 0 8px 24px rgba(24, 59, 86, .07);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--color-background); color: var(--color-text-primary); font-family: var(--font-be-vietnam-pro), Arial, Helvetica, sans-serif; }
+.container-wide { width: min(1280px, calc(100% - 32px)); margin-inline: auto; }
+.card-shadow { box-shadow: var(--shadow-card); }
+button, a, input, select { transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid rgba(245, 130, 32, .35); outline-offset: 2px; }
+button:hover:not(:disabled) { transform: translateY(-1px); }
+@media (max-width: 640px) { .container-wide { width: min(100% - 24px, 1280px); } }
